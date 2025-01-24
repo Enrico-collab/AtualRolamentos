@@ -1,0 +1,1345 @@
+.nav {
+  margin-top: 10px;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.slider-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 6px 3px rgba(0, 0, 0, 0.7);
+}
+
+.slider-subtitle {
+  margin-top: 8px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: rgb(245, 245, 245);
+  text-shadow: 2px 6px 3px rgba(49, 35, 35, 0.7);
+}
+
+.slider-btn {
+  padding: 8px 30px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #203fba, #0b39f3);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  color: rgb(22, 22, 22);
+  text-decoration: none;
+  background: linear-gradient(45deg, #777, #ac9c9c);
+}
+
+/*INICIO PAGINA HOME*/
+/* Titulo */
+.nossos-produtos {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  color: #2f2f2f;
+  font-size: 42px;
+  line-height: 2;
+  text-shadow: 0px 2px 2px rgba(60, 60, 60, 0.7);
+}
+
+/* Barra inferior colorida */
+/* .nossos-produtos::after {
+  content: "";
+  display: block;
+  width: 200px; 
+  height: 3px;
+  background-color: #0049af; 
+  margin: -10px auto 0; 
+  border-radius: 6px; 
+} */
+
+.nossos-color {
+  color: #0049af;
+  font-weight: bold;
+}
+
+.subtitulo-nossos-produtos {
+  font-size: 16px;
+  color: #2f2f2f;
+  line-height: 1.8;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-weight: 400;
+  opacity: 0.85;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.produto {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.produto h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.produto p {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.btn-custom {
+  background: linear-gradient(90deg, #203fba, #0b39f3); /* Gradiente azul */
+  color: #fff;
+  border-radius: 7px;
+  font-size: 14px;
+  padding: 8px 24px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Efeito de transição suave */
+}
+
+.btn-custom:hover {
+  background: linear-gradient(
+    90deg,
+    #a6a6a6,
+    #ac9c9c
+  ); /* Gradiente invertido no hover */
+  transform: translateY(-2px); /* Leve elevação no hover */
+}
+
+.btn-custom:hover {
+  background-color: #e9ecef;
+}
+
+.quemsomos {
+  position: relative;
+  background-image: url("../img/home/quem-somos/slide-quem-somos.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #0049af;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  margin-top: 90px;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.quemsomos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.91);
+  z-index: 5; /* A sobreposição ficará atrás de todos os outros elementos */
+}
+
+.quemsomos__colunaesquerda,
+.quemsomos__colunadireita {
+  position: relative; /* Garantir que esses elementos possam ser empilhados corretamente */
+  z-index: 6; /* Definir um z-index maior para o conteúdo */
+}
+
+.btn-quem-somos {
+  z-index: 10; /* O botão ficará acima do conteúdo e da sobreposição */
+  position: relative; /* Necessário para o z-index funcionar */
+  display: inline-block;
+  padding: 8px 30px;
+  font-size: 16px;
+  font-weight: normal; /* Remove o negrito */
+  color: white;
+  text-decoration: none; /* Remove qualquer decoração de texto do link */
+  background: linear-gradient(
+    90deg,
+    #0049af,
+    #0b3861
+  ); /* Gradiente do azul claro para o azul escuro */
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-quem-somos:hover {
+  color: #2f2f2f;
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    #a6a6a6,
+    #ac9c9c
+  ); /* Inverter o gradiente no hover */
+  transform: translateY(-3px); /* Leve movimento para cima */
+}
+
+.quemsomos__colunaesquerda {
+  width: 100%; /* Alterado para 100% para ocupar toda a largura em telas menores */
+  padding: 20px; /* Reduzido o preenchimento para melhor ajuste em telas menores */
+  padding-left: 30px; /* Adicionado padding-left para ajustar o alinhamento no desktop */
+}
+
+.quemsomos__colunadireita {
+  width: 100%; /* Alterado para 100% para ocupar toda a largura em telas menores */
+  padding: 5px 30px 40px 30px; /* Reduzido o preenchimento para melhor ajuste em telas menores */
+}
+
+.quemsomos__titulo {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 2px 1px rgba(60, 60, 60, 0.7);
+  margin-top: 20px;
+}
+
+.quemsomos__texto {
+  color: #e5e5e5;
+  text-align: justify;
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-right: 2px;
+  margin-left: -4px;
+  text-shadow: 1px 2px 1px rgba(60, 60, 60, 0.7);
+}
+
+.quemsomos__texto::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.quemsomos__imagem {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Adicionado para lidar com espaços em branco abaixo da imagem */
+  margin: 0 auto;
+  margin-top: 80px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px rgba(84, 84, 84, 0.5);
+}
+
+.orcamento {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.orcamento .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.orcamento h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2f2f2f;
+  text-shadow: 0px 2px 2px rgba(60, 60, 60, 0.7);
+}
+
+.orcamento p {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.orcamento-titulo-color {
+  color: #0049af;
+}
+
+.orcamento .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.orcamento .form-group input,
+.orcamento .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.orcamento .form-group textarea {
+  resize: vertical;
+}
+
+.contato-info {
+  margin-top: 33px;
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info h2 {
+  font-weight: bold;
+  color: #0049af;
+  margin-bottom: 20px;
+}
+
+.informacoes-color {
+  color: #2f2f2f;
+}
+
+.contato-info p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 30px;
+  margin-top: 10px;
+  color: #fff;
+  background: linear-gradient(90deg, #203fba, #0b39f3);
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn btn-custom btn-large:hover {
+  background-color: #e9ecef;
+}
+
+/** RODAPÉ */
+.rodape-container {
+  margin-top: 20px;
+  background-color: #151515;
+}
+
+.rodape-menu {
+  color: #fff;
+}
+
+.col-md-3 {
+  margin-top: 50px;
+}
+.col-md-3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-phone {
+  color: #2446c3;
+}
+
+.icon-whatsapp {
+  color: #2446c3;
+}
+
+.icon-email {
+  color: #2446c3;
+}
+
+.text-gray {
+  color: #adadad;
+}
+
+/* Adiciona margem inferior entre as colunas do rodapé */
+.col-md-4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Reduz a margem inferior das frases dentro das colunas do rodapé */
+.col-md-4 p {
+  margin-bottom: 5px;
+}
+
+.btn-whatsapp {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  background-color: #25d366;
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp i {
+  margin-right: 5px;
+}
+
+.rodape-claro {
+  background-color: #121212;
+}
+
+#whatsapp-container {
+  position: fixed;
+  bottom: 20px; /* Distância do fundo da tela */
+  right: 35px; /* Distância da borda direita */
+  z-index: 9999; /* Garante que o botão fique acima de outros elementos */
+  text-align: center;
+}
+
+#whatsapp-bubble {
+  display: none; /* Inicialmente o balão está oculto */
+  background-color: #25d366; /* Cor de fundo do balão */
+  color: white; /* Cor do texto */
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 250px; /* Aumentei a largura máxima do balão */
+  margin-bottom: 10px; /* Espaço entre o balão e o ícone */
+  position: absolute;
+  bottom: 60px; /* Distância entre o balão e o botão */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#whatsapp-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #25d366; /* Cor do balão */
+}
+
+#whatsapp-button {
+  position: relative;
+  z-index: 1; /* Garante que o botão fique acima do balão */
+}
+
+#whatsapp-button img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Exibe o balão ao passar o mouse sobre o contêiner */
+#whatsapp-container:hover #whatsapp-bubble {
+  display: block;
+}
+/*FIM DA PAGINA HOME*/
+
+/* INICIO PAGINA EMPRESA */
+.page-header {
+  position: relative;
+  background-color: #203fba;
+  padding: 100px 0;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.page-header .breadcrumb {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.page-header .breadcrumb .active {
+  color: #fff; /* Cor do item ativo */
+}
+
+.nossa-empresa {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  color: #2f2f2f;
+  font-size: 42px;
+  line-height: 2;
+  text-shadow: 0px 2px 2px rgba(60, 60, 60, 0.7);
+}
+
+.quem-somos-empresa__titulo {
+  margin-top: -40px;
+  font-weight: bold;
+  text-shadow: 0px 2px 2px rgba(60, 60, 60, 0.7);
+}
+
+.quem-somos-empresa__titulo span {
+  color: #0b39f3;
+}
+
+.quem-somos-empresa__titulo strong {
+  color: #2f2f2f;
+}
+
+.quem-somos-empresa__titulo {
+  font-size: 48px;
+  color: #333;
+}
+
+.quem-somos-empresa_texto {
+  font-size: 16px;
+  color: #2f2f2f;
+  line-height: 1.8;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-weight: 400;
+  opacity: 0.85;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sessao-valores {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sessao-valores {
+  position: relative;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Adiciona a sobreposição preta na imagem */
+.sessao-valores::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/empresa/bg-missao-visao-valores.svg"); /* Substitua pela URL da sua imagem */
+  background-size: cover;
+  background-position: center;
+  z-index: -2; /* A camada de imagem deve estar atrás */
+}
+
+.sessao-valores::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+/* Caixa de cada feature */
+.feature-box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box-icon {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: left;
+}
+
+.feature-box-icon i {
+  font-size: 48px;
+  color: transparent;
+  background: linear-gradient(90deg, #203fba, #3257eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.feature-box-info {
+  text-align: left;
+}
+
+.feature-box-info h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2f2f2f;
+  margin-bottom: 10px;
+}
+
+.feature-box-info p {
+  font-size: 16px;
+  color: #666666;
+}
+
+/**EQUIPE**/
+.texto-nossa-equipe {
+  color: #2f2f2f;
+  text-shadow: 0px 2px 2px rgba(60, 60, 60, 0.7);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 81px;
+  font-weight: bold;
+}
+
+.texto-nossa-equipe span {
+  color: #0b39f3;
+  text-shadow: 0px 2px 2px rgba(60, 60, 60, 0.7);
+}
+
+.sessao-equipe {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-top: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da seção */
+.texto-nossa-equipe {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.texto-nossa-equipe span {
+  color: #203fba;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+/* Cards dos membros da equipe */
+.team-member {
+  text-align: center;
+  margin-bottom: 30px; /* Menor espaçamento entre os membros */
+  background: linear-gradient(
+    135deg,
+    #d5d5d5,
+    #ffffff
+  ); /* Azul claro para branco */
+  border-radius: 12px; /* Borda mais arredondada */
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Garante que o card ocupe toda a largura disponível */
+  max-width: 220px; /* Tamanho reduzido dos cards */
+  margin: 10px; /* Ajuste o espaço entre os cards */
+}
+
+.team-member:hover {
+  transform: translateY(-8px); /* Menor efeito de elevação */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    135deg,
+    #203fba,
+    #ffffff
+  ); /* Azul mais intenso no hover */
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 120px; /* Ajusta o tamanho da imagem */
+  height: 120px; /* Ajusta o tamanho da imagem */
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.15); /* Aumenta um pouco o tamanho da imagem no hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h4 {
+  font-size: 18px; /* Tamanho de fonte reduzido */
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.team-member p {
+  font-size: 14px; /* Fonte do cargo reduzida */
+  font-weight: 500;
+  color: #666666; /* Cor cinza para o cargo */
+  transition: color 0.3s ease;
+}
+
+.team-member:hover::before {
+  opacity: 1; /* Adiciona uma leve sobreposição no hover */
+}
+
+/* Efeitos de fade para o carregamento */
+.team-member {
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+}
+
+/* Responsividade - Os cards ficam em uma linha na tela maior */
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards na linha */
+  }
+
+  .team-member {
+    flex: 1 1 220px; /* Garante que todos os cards ocupem o mesmo espaço */
+    margin: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Aplica espaçamento entre os membros da equipe */
+  .team-member {
+    margin-bottom: 30px;
+    margin-right: 15px; /* Espaçamento entre os membros */
+  }
+
+  /* Organiza 3 vendedores em cima e 2 embaixo */
+  .row:nth-child(2) .team-member {
+    margin-top: 30px;
+  }
+}
+
+/*FIM PAGINA EMPRESA*/
+
+/*INICIO PAGINA CONTATO*/
+.titulo-pagina-contato {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+  text-shadow: 0px 2px 2px rgba(60, 60, 60, 0.7);
+}
+
+.subtitulo-pagina-contato {
+  font-size: 16px;
+  color: #2f2f2f;
+  margin-top: -14px;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-weight: 400;
+  opacity: 0.85;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.azul {
+  color: #0049a8;
+}
+
+.subtitulo-formulario {
+  font-size: 16px;
+  color: #2f2f2f;
+  margin-top: -14px;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-weight: 400;
+  opacity: 0.85;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+  margin-top: 20px;
+  display: none; /* Ocultar inicialmente */
+}
+
+.text-dark {
+  color: #2f2f2f;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.titulo-contato-vendedores {
+  font-weight: bold;
+  margin-top: -80px;
+  font-size: 34px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact-section {
+  padding: 80px 0;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  max-width: 1000px; /* Ajusta a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.contact-section .section-heading {
+  margin-bottom: 40px;
+}
+
+.contact-section .vendedores {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section .vendedores:hover {
+  background-color: #ddd;
+}
+
+.contact-section .team-member h4 {
+  margin-bottom: 10px;
+}
+
+.contact-section .team-member p {
+  margin-bottom: 5px;
+}
+
+.contact-section .team-member a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-section .team-member a:hover {
+  text-decoration: underline;
+}
+
+.email-vendedor {
+  margin-left: -10px;
+}
+
+.sessao-contato {
+  display: flex;
+  gap: 138px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 45%;
+}
+
+.bg-cinza {
+  background-color: #f4f4f4; /* Cor cinza claro */
+  padding: 30px 0; /* Espaçamento superior e inferior */
+  border-radius: 10px; /* Bordas arredondadas */
+  width: 100%; /* Garantindo que ocupe 100% da largura da tela */
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+/* Tamanho reduzido da imagem */
+.img-small {
+  max-width: 80%;
+  height: auto;
+  margin-left: 140px;
+  margin-top: -35px;
+}
+
+.sessao-formulario {
+  margin-top: 35px;
+}
+
+.titulo-pagina-contato {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.item span {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Faz as colunas se empilharem em telas menores */
+  }
+
+  .coluna-esquerda,
+  .coluna-direita {
+    flex: 1 1 100%; /* As colunas ocupam 100% da largura em telas menores */
+  }
+}
+
+.avalie-atendimento {
+  background: linear-gradient(135deg, #203fba, #00bcd4);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.avalie-atendimento:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+}
+
+.avalie-atendimento-titulo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.avalie-atendimento-titulo-azul {
+  color: #ffcc00; /* Cor amarela para destaque */
+}
+
+.avalie-atendimento-texto {
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-shadow: 0px 2px 1px rgba(41, 41, 41, 0.2);
+}
+
+.avalie-atendimento-texto a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.avalie-atendimento-texto a:hover {
+  color: #fff;
+}
+
+.mapa {
+  margin-bottom: -35px;
+}
+
+/*INICIO PAGINA DOS PRODUTOS*/
+
+.products-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* Estilo do item de produto (figure) */
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 30px; /* Ajusta o espaço entre os itens de produto */
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  padding: 20px;
+  min-height: 350px;
+  flex: 1 1 30%;
+  margin-top: 10px; /* Pequeno ajuste na margem superior, se necessário */
+}
+
+/* Garante que os itens do produto não sejam muito pequenos */
+.product-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Garantir que as imagens se ajustem corretamente */
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  object-fit: cover; /* Faz com que a imagem cubra todo o espaço do contêiner sem distorcer */
+  margin-bottom: 15px; /* Espaçamento entre a imagem e o título */
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.product-item:hover img {
+  transform: scale(1.05); /* Aumenta ligeiramente a imagem */
+}
+
+.product-item h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+  flex-grow: 0; /* Não faz o título crescer */
+  margin-bottom: 15px; /* Espaçamento entre o título e a descrição */
+}
+
+/* Cor de destaque do título ao passar o mouse */
+.product-item:hover h4 {
+  color: #0049a8;
+}
+
+/* Descrição do produto */
+.product-item p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  padding: 0 10px;
+  flex-grow: 1; /* Faz a descrição ocupar o espaço restante dentro do produto */
+  margin-bottom: 20px; /* Espaçamento entre a descrição e o botão */
+}
+
+/* Altera a opacidade da descrição no hover */
+.product-item:hover p {
+  opacity: 0.8;
+}
+
+/* Estilo do botão "Solicitar Cotação" */
+.btn-cotacao {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #0049a8;
+  color: #fff; /* Cor do texto do botão */
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal; /* Remove o negrito */
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+/* Efeito hover para o botão */
+.btn-cotacao:hover {
+  background-color: #003a8c;
+  transform: scale(1.05);
+  color: #fff; /* Garante que o texto continue branco no hover */
+}
+
+/* Ajuste do layout para telas grandes */
+@media (min-width: 992px) {
+  .product-item {
+    transition: all 0.4s ease-in-out; /* Transição mais suave para telas grandes */
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+}
+
+/* Exibe o overlay ao passar o mouse sobre o item */
+.product-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Configurações do grid */
+.products-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 0px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Esconde a seta para cima */
+#scroll-to-top,
+.scroll-to-top {
+  display: none !important;
+}
+
+/* RESPONSIVIDADE PAGINA HOME */
+@media (min-width: 768px) {
+  /* INICIO PAGINA HOME */
+  .slider-subtitle {
+    font-size: 18px;
+  }
+
+  .slider-btn {
+    font-size: 14px;
+  }
+
+  .quemsomos__colunaesquerda,
+  .quemsomos__colunadireita {
+    width: 50%; /* Dividir as colunas igualmente em telas maiores que 768px */
+    padding: 50px; /* Restaurado o preenchimento para telas maiores */
+  }
+}
+/* FIM PAGINA HOME */
+
+@media (max-width: 480px) {
+  /* INICIO PAGINA HOME */
+
+  #header .header-nav-top .nav > li > span {
+    display: none;
+  }
+
+  #header .header-btn-collapse-nav {
+    padding: 8px 12px;
+    margin-top: 25px;
+  }
+
+  .slider-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .slider-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+
+  .slider-subtitle {
+    display: none;
+  }
+
+  .slider-btn {
+    margin-top: 8px;
+    font-size: 13px;
+    padding: 5px 16px;
+  }
+
+  .container .nossos-produtos {
+    font-size: 25px;
+  }
+
+  .quemsomos__titulo {
+    font-size: 25px;
+  }
+
+  .subtitulo-nossos-produtos {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .produto {
+    border: 0.3px solid #ccc;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .produto img {
+    width: 70%;
+    border-radius: 12px;
+  }
+
+  .quemsomos__imagem {
+    margin-top: 20px;
+  }
+
+  .quemsomos__texto {
+    font-size: 16px;
+  }
+
+  .owl-carousel {
+    margin-top: -40px;
+  }
+
+  .owl-carousel .col img {
+    width: 100%; /* Ajusta a largura das imagens para se adequar melhor */
+    margin: 0 auto; /* Centraliza as imagens */
+  }
+
+  .orcamento {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 12px;
+  }
+
+  .orcamento-titulo-color {
+    font-size: 25px; /* Tamanho da fonte para a palavra 'SOLICITE' */
+  }
+
+  h2 {
+    font-size: 25px; /* Tamanho da fonte para o título inteiro */
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .img-fluid {
+    height: 110px;
+  }
+
+  .text-gray {
+    font-size: 15px;
+  }
+
+  .mb-0 {
+    font-size: 15px;
+  }
+
+  /* FIM PAGINA HOME */
+  /* INICIO PAGINA EMPRESA */
+  .nossa-empresa {
+    font-size: 25px;
+  }
+
+  .feature-box {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .sessao-valores {
+    margin-top: 25px;
+  }
+  .sessao-equipe {
+    display: none;
+  }
+  .row {
+    margin-top: -21px;
+  }
+
+  /* FIM PAGINA EMPRESA */
+  /* INICIO PAGIMA CONTATO */
+  .titulo-pagina-contato,
+  .avalie-atendimento-titulo {
+    font-size: 25px;
+  }
+  .avalie-atendimento-corpo {
+    margin-top: 20px;
+  }
+
+  .avalie-atendimento-texto {
+    font-size: 16px;
+  }
+
+  .img-small {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .form-group {
+    font-size: 15px;
+  }
+}

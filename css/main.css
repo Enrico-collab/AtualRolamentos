@@ -1,0 +1,169 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+#recent-works {
+    background: #ef7f1b;
+    color: #fff
+}
+
+    #recent-works
+
+    #clients {
+        background: #fff
+    }
+
+#clients h4 {
+    color: #999
+}
+
+#clients .carousel {
+    margin-bottom: 0
+}
+
+#clients .clients ul.thumbnails {
+    margin: 0
+}
+
+    #clients .clients ul.thumbnails > li {
+        text-align: center;
+        margin-bottom: 0
+    }
+
+#clients .prev, #clients .next {
+    color: #999
+}
+
+.title {
+    background: #ef7f1b;
+    color: #fff;
+    padding: 100px 0 20px 10px;
+}
+
+.title2 {
+    background: #ef7f1b;
+    color: #ffffff;
+    padding: 10px 0 20px 10px;
+    text-align: center;
+}
+
+
+
+.fotoEsquerda {
+    float: left;
+    margin: 8px 40px 20px 18px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    background: #fff;
+}
+
+.foto {
+    margin: 8px 40px 20px 18px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+/* ------------------ veja tambem ------------------ */
+.scroll {
+    width: 900px;
+    margin: 0 auto 30px auto;
+}
+
+    .scroll h4 a {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #cccccc;
+        text-align: center;
+        padding: 0 10px;
+        width: 200px;
+        height: 48px;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+        .scroll h4 a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+    .scroll h4 strong {
+        font-size: 18px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 40px 0 -10px 0;
+        padding: 8px 0 8px 0;
+        width: 100%;
+        background-color: #ef7f1b;
+        text-align: center;
+        display: block;
+    }
+
+.boxScroll {
+    width: 200px;
+    height: 248px;
+    margin: 0 10px;
+    background: #000;
+}
+
+.txtScroll {
+    background: #2C2F30;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* ------------------ mais visitados e tags ------------------ */
+
+.maisVisitados {
+    border: 1px solid #0B3861;
+    padding: 10px;
+    margin: 15px 0 0 0;
+    border-radius: 15px 15px 0 0;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+    .maisVisitados h4 {
+        color: #6d6e70;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .maisVisitados ul {
+    }
+
+    .maisVisitados li {
+        display: inline;
+        margin: 0 7px;
+        font: normal 11px arial;
+        color: #999;
+    }
+
+        .maisVisitados li a {
+            color: #666;
+        }
+
+            .maisVisitados li a:hover {
+                color: #333;
+            }
+
+.tags {
+    color: #ffffff;
+    background: #0B3861;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 15px;
+    font-family: tahoma;
+    font-size: 9px;
+    text-align: left;
+}
+
+    .tags em {
+        text-transform: lowercase;
+    }
+
+/* ------------------ google map ------------------ */
+#map-canvas {
+    padding: 80px 0 0 0;
+}
