@@ -1,7 +1,7 @@
 # Atual Rolamentos
 Este projeto consistiu na revisão e aprimoramento de um site institucional para uma empresa de suprimentos industriais. A partir de um código existente, o site foi adaptado com foco na experiência do usuário, performance e responsividade, oferecendo uma solução otimizada para o cliente.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas:
 
 **HTML, CSS e SASS**: Para estruturar e estilizar a página, criando uma interface clara, objetiva e visualmente agradável.
 
